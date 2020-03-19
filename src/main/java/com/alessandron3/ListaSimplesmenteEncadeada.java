@@ -8,15 +8,12 @@ public class ListaSimplesmenteEncadeada {
     public int quantidadeItens = 0;
 
     public ListaSimplesmenteEncadeada(String[] dados) {
-        //TODO implementar o insert dos dados na lista
 
         for(String dado: dados)
             this.adicionaItem(dado);
     }
 
     public void adicionaItem(String dado) {
-        //TODO implementar a funcao de adicionar um item na lista
-
         Item item = new Item(dado);
         if(primeiro == null && ultimo == null) {
             primeiro = item;
@@ -30,8 +27,6 @@ public class ListaSimplesmenteEncadeada {
 
 
     public void removerItem(String dado) {
-        //TODO implementar funcao de remover um item
-
         if(primeiro.dado.equals(dado)) {
             primeiro = primeiro.proximo;
             quantidadeItens--;
