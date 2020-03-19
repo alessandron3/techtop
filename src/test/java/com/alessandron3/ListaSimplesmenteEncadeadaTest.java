@@ -42,7 +42,7 @@ public class ListaSimplesmenteEncadeadaTest {
         Assert.assertNull(item.proximo);
     }
 
-
+    //{"Java", "C++", "Python", "Kotlin", "NodeJs"};
     @Test
     public void removerItemTest() {
         String itemRemovido = "NodeJs";
@@ -53,6 +53,7 @@ public class ListaSimplesmenteEncadeadaTest {
 
         do {
             Assert.assertFalse(atual.dado.equals(itemRemovido));
+            System.out.printf("Dados: " + atual.dado);
             atual = atual.proximo;
         } while (atual != null);
 
