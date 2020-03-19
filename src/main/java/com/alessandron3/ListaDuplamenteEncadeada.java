@@ -17,42 +17,11 @@ public class ListaDuplamenteEncadeada {
     public void adicionarItem(String dado) {
         //TODO implementar a funcao de adicionar um item na lista
 
-        ItemDuplo item = new ItemDuplo(dado);
-        if(primeiro == null && ultimo == null)
-            primeiro = item;
-        else {
-            ultimo.proximo = item;
-            item.anterior = ultimo;
-        }
-        ultimo = item;
-        quantidadeItens++;
     }
 
     public void removerItem(String dado) {
+        //TODO Implementar funcao que remove item
 
-        if(primeiro.dado.equals(dado)) {
-            primeiro = primeiro.proximo;
-            primeiro.anterior = null;
-            quantidadeItens--;
-        } else {
-            ItemDuplo aux = primeiro.proximo;
-            ItemDuplo anterior = aux.anterior;
-            while (aux != null) {
-                if(aux.dado.equals(dado)) {
-                    aux.anterior.proximo = aux.proximo;
-
-                    if(aux.proximo != null)
-                        aux.proximo.anterior = anterior;
-                    else
-                        ultimo = null;
-                    quantidadeItens--;
-                    break;
-                }
-
-                aux = aux.proximo;
-                anterior = aux.anterior;
-            }
-        }
     }
 
 

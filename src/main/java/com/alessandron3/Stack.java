@@ -7,17 +7,17 @@ public class Stack {
     List<String> dados = new LinkedList<>();
 
     public void push(String dado) {
-        dados.add(dado);
+        //TODO implementar funcao para add item na pilha
+
     }
 
     public String pop() {
-        if(dados.isEmpty())
-            return null;
-
-        return  dados.remove(dados.size() - 1);
+        //TODO Implementar funcao para remover item da pilha
+        return null;
     }
 
     public int size() {
-        return dados.size();
+        //TODO Implementar funcao para verificar quantidade de itens na pilha
+        return 0;
     }
 }
