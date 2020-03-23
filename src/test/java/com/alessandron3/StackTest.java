@@ -7,11 +7,16 @@ public class StackTest {
 
     Stack stack = new Stack();
 
+    java.util.Stack<String> javaStack = new java.util.Stack<>();
+
 
     @Test
     public void pushTest() {
         stack.push("Java");
         stack.push("Kotlin");
+
+        javaStack.push("Java");
+        javaStack.pop();
 
         Assert.assertTrue(stack.size() > 0);
     }
